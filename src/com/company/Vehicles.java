@@ -1,6 +1,6 @@
 package com.company;
 
-public class Vehicles {
+abstract public class Vehicles {
     private String brand;
     private String description;
     private int model;
@@ -55,4 +55,6 @@ public class Vehicles {
     public void setAirConditioning(boolean airConditioning) {
         this.airConditioning = airConditioning;
     }
+
+    abstract double getPriceWithTax();
 }
