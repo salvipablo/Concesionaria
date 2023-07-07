@@ -9,6 +9,7 @@ public class Main {
         VehiclesPersistence vehiclesPersistence = new VehiclesPersistence();
         VehiclesIds idsVehiclesInf = VehiclesIds.getInstance();
 
+        // TODO: Sacar veh_1, veh_2 etc, hacer que se pueda crear mas dinamicamente y despues con un for enviar a persistencia
         // Autos.
         Vehicles veh_1 = new Car("Gol", "Trend 1.6 Pack3", 2010, true, 25000, "auto");
         Vehicles veh_2 = new Car("Vento", "2.5 Deluxe", 2008, true, 45000, "auto");
@@ -24,6 +25,8 @@ public class Main {
         Vehicles veh_6 = new Motorcycle("Zanella", "110 TTE", 2008, false, 7500, "moto");
         vehiclesPersistence.createVehicle(idsVehiclesInf.nextId(), veh_5);
         vehiclesPersistence.createVehicle(idsVehiclesInf.nextId(), veh_6);
+
+        // TODO: Hacer que la aplicacion este mas ordenada con una clase Controller y la ejecucion salga de main
 
         listarTodosPrecioImpuesto(vehiclesPersistence.getCars());
 
