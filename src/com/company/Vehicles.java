@@ -1,7 +1,6 @@
 package com.company;
 
 public class Vehicles {
-    private int id;
     private String brand;
     private String description;
     private int model;
@@ -9,9 +8,8 @@ public class Vehicles {
     private int price;
     private String typeVehicle;
 
-    public Vehicles(int id, String brand, String description, int model, boolean airConditioning, int price,
+    public Vehicles(String brand, String description, int model, boolean airConditioning, int price,
                                                                                                 String typeVehicle) {
-        this.id = id;
         this.brand = brand;
         this.description = description;
         this.model = model;
@@ -20,7 +18,6 @@ public class Vehicles {
         this.typeVehicle = typeVehicle;
     }
 
-    public int getId() { return id; }
     public String getBrand() {
         return brand;
     }
@@ -40,7 +37,6 @@ public class Vehicles {
         return typeVehicle;
     }
 
-    public void setId(int id) { this.id = id; }
     public void setTypeVehicle(String typeVehicle) {
         this.typeVehicle = typeVehicle;
     }
