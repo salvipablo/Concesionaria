@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.ArrayList;
+
 abstract public class Vehicles {
     private String brand;
     private String description;
