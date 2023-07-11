@@ -1,4 +1,4 @@
-package com.company;
+package com.company.models;
 
 import java.util.ArrayList;
 
@@ -58,5 +58,5 @@ abstract public class Vehicles {
         this.airConditioning = airConditioning;
     }
 
-    abstract double getPriceWithTax();
+    public abstract double getPriceWithTax();
 }

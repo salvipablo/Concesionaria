@@ -1,4 +1,6 @@
-package com.company;
+package com.company.controller;
+
+import com.company.models.Vehicles;
 
 public class Motorcycle extends Vehicles {
     public Motorcycle(String brand, String description, int model, boolean airConditioning, int price, String typeVehicle) {
